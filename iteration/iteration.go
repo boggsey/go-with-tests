@@ -2,18 +2,13 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-const repeatCount = 5
-
-func Repeat(character string) string {
-	var repeated string
-	for i := 0; i < repeatCount; i++ {
-		repeated += character
-	}
-	return repeated
+func Repeat(s string, count int) string {
+	return strings.Repeat(s, 4)
 }
 
 func main() {
-	fmt.Println(Repeat("a"))
+	fmt.Println(Repeat("a", 4))
 }
