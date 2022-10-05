@@ -1,4 +1,7 @@
 go 1.19
 
-use ./helloWorld
-use ./integers
+use (
+	./helloWorld
+	./integers
+	./iteration
+)
